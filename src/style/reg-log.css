@@ -12,12 +12,14 @@
 .reg-wrapper {
     max-width: 60%;
     width: 100%;
+    min-height: 80%;
     display: flex;
     align-items: center;
     background-color: #fff;
     justify-content: space-between;
-    padding: 20px 10px 5px 10px;
+    padding: 20px;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 .image-container {
@@ -28,6 +30,11 @@
 
 .regIcon {
     width: 300px;
+    height: 400px;
+}
+
+.loginIcon {
+    width: 400px;
     height: 400px;
 }
 
@@ -86,7 +93,6 @@
     align-items: center;
     gap: 10px;
     color: #212427;
-    font-size: 16px;
 }
 
 .reg-btn {
@@ -104,4 +110,23 @@
 .terms-wrapper a {
     text-decoration: none;
     color: #00B8D9;
+}
+
+.reg-btn.login {
+    width: 110px;
+}
+
+.login-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+
+    a {
+        cursor: pointer;
+    }
+
+    img {
+        width: 25px;
+    }
 }
