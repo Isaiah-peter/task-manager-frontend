@@ -3,6 +3,12 @@ import '../../style/navbar.css'
 import dIcon from "../../assets/dashboard"
 
 const Navbar = () => {
+    const currentDate = new Date()
+
+    const day = currentDate.getDate()
+    const month = currentDate.getMonth() + 1
+    const year = currentDate.getFullYear()
+    const dayName = currentDate.toLocaleString('default', {weekday: 'long'})
     return (
         <div className="navbar">
             <div>
@@ -19,8 +25,8 @@ const Navbar = () => {
                 </div>
 
                 <div className="date-wrapper">
-                    <p className="day">Tuesday</p>
-                    <p className="date">{Date.UTC(Date.now())}</p>
+                    <p className="day">{dayName}</p>
+                    <p className="date">{day}/{month}/{year}</p>
                 </div>
             </div>
         </div>
