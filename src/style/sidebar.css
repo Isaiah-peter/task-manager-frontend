@@ -1,4 +1,97 @@
 
 .sidebar {
-    w
+    width: 280px;
+    height: calc(100vh - 80px);
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    padding-top: 10px;
+    color: var(--white);
 }
+
+.userimage {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:10px;
+    border-radius: 50%;
+}
+
+.sidebar-wrapper {
+    width: 100%;
+    background-color: var(--light-orange);
+    height: calc(100% - 40px);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-email {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.sidebar-lists {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar-item a, .logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 250px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.logout {
+    padding: 0;
+}
+
+.sidebar-item {
+    text-decoration: none;
+}
+
+.sidebar-item a img,
+.logout img {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar-item a p,
+.logout p {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.sidebar-item a.active {
+    background-color: var(--white);
+
+    p {
+        color: var(--light-orange);
+    }
+}
+

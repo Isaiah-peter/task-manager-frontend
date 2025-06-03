@@ -1,0 +1,8 @@
+.app-layout {
+    position: relative;
+}
+
+.main-body {
+    position: relative;
+    margin-top: 80px;
+}

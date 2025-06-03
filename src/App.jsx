@@ -9,10 +9,12 @@ function App() {
   
 
   return (
-    <>
+    <div className='app-layout' >
       <Navbar />
-      <SideBar />
-    </>
+      <div className='main-body'>
+        <SideBar />
+      </div>
+    </div>
   )
 }
 
