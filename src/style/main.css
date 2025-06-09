@@ -1,0 +1,82 @@
+.home-container {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 40px;
+}
+
+.home-wrapper {
+    padding-top: 10px;
+}
+
+.home-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-top h1 {
+    font-size: 36px;
+    font-weight: 400;
+
+    img {
+        margin-left: 3px;
+        width: 36px;
+    }
+}
+
+.friend-container{
+    display: flex;
+    align-items: center;
+}
+
+.user-friend {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.user-friend img {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-friend-btn {
+    height: 36px;
+    width: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-orange);
+    border: 1px solid var(--light-orange);
+    background-color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-friend-btn svg {
+    margin-right: 5px;
+    
+}
+
+.home-task-container {
+    margin-top: 20px;
+    border: 1px solid var(--gray);
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-task-container .shadow {
+    flex: 1;
+    box-shadow: 1px 2px 6px var(--gray);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
