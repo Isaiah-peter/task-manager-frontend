@@ -198,6 +198,25 @@
     }
 }
 
+.charts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-status-text {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        font-size: 15px;
+        color: var(--black);
+        font-weight: 400;
+    }
+}
+
 .gray {
     color: var(--gray) !important;
 }

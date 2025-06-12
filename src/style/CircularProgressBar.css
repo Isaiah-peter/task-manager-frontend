@@ -1,0 +1,16 @@
+.circular-progress-bar {
+    display: block;
+  }
+  
+  .circle-bg {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(0.25turn);
+    transform-origin: 50% 50%;
+  }
+  
+  .circle-progress {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(0.25turn);
+    transform-origin: 50% 50%;
+  }
+  
