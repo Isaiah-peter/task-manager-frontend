@@ -1,0 +1,21 @@
+.mytask {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    gap: 10px;
+}
+
+.tasklist {
+    flex: 2;
+    box-shadow: 1px 2px 6px var(--gray);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.taskdetails {
+    flex: 3;
+    box-shadow: 1px 2px 6px var(--gray);
+    padding: 10px;
+    border-radius: 10px;
+}
