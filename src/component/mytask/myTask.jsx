@@ -5,10 +5,11 @@ import taskIcon from "../../assets/task-icon.svg"
 import editbtn from "../../assets/edit.svg";
 import deletebtn from "../../assets/delete.svg";
 
-const MyTask = () => {
+const MyTask = ({vital}) => {
     return (
         <div className="mytask">
             <div className="tasklist">
+                <h3 className="tasklist-header"><span>{vital == "vital" ? "Vital" : "My"}</span> Tasks</h3>
                 <div className='other-task'>
                     <div className='task-card'>
                         <div className="piorty-tag">

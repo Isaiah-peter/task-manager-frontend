@@ -4,7 +4,7 @@ import icon from "../../assets/sidebar"
 
 const SideBar = () => {
     return (
-        <div class="sidebar">
+        <div className="sidebar">
             <img src={icon.user} className="userimage"/>
             <div className="sidebar-wrapper">
                 <div>

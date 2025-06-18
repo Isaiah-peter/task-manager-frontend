@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <div className='main-body'>
         <SideBar />
-        <MyTask />
+        <Home />
       </div>
     </div>
   )
