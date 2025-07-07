@@ -7,17 +7,30 @@
 }
 
 .tasklist {
-    flex: 3;
+    flex: 2.5;
     box-shadow: 1px 2px 6px var(--gray);
     padding: 10px;
     border-radius: 10px;
 }
 
 .taskdetails {
-    flex: 3.5;
+    flex: 3;
     box-shadow: 1px 2px 6px var(--gray);
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasklist-header {
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: capitalize;
+
+    span {
+        border-bottom: 2px solid var(--light-orange)
+    }
 }
 
 .top-detail {
@@ -48,4 +61,27 @@
 .top-detail .status p{
     font-size: 12px;
     font-weight: 500px;
+}
+
+.detail-task {
+    font-family: "Inter";
+    color: var(--task-detail-color);
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.actionbtn-container {
+    align-self: flex-end;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        cursor: pointer;
+    }
 }

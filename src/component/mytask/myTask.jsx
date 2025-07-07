@@ -2,11 +2,14 @@ import React from "react";
 import "../../style/mytask.css"
 import "../../style/main.css"
 import taskIcon from "../../assets/task-icon.svg"
+import editbtn from "../../assets/edit.svg";
+import deletebtn from "../../assets/delete.svg";
 
-const MyTask = () => {
+const MyTask = ({vital}) => {
     return (
         <div className="mytask">
             <div className="tasklist">
+                <h3 className="tasklist-header"><span>{vital == "vital" ? "Vital" : "My"}</span> Tasks</h3>
                 <div className='other-task'>
                     <div className='task-card'>
                         <div className="piorty-tag">
@@ -43,7 +46,14 @@ const MyTask = () => {
                     </div>
                 </div>
 
-                <p className="detail-task"><span className="bold"></span>: </p>
+                <p className="detail-task"><span className="bold">Task Title</span>: Document Submission.</p>
+                <p className="detail-task"><span className="bold">Objective</span>: Review the list of documents required for submission and ensure all necessary documents are ready. Organize the documents accordingly and scan them if physical copies need to be submitted digitally. Rename the scanned files appropriately for easy identification and verify the accepted file formats. Upload the documents securely to the designated platform, double-check for accuracy, and obtain confirmation of successful submission. Follow up if necessary to ensure proper processing.</p>
+                <p className="detail-task"><span className="bold">Deadline for Submission</span>: End of Day.</p>
+
+                <div className="actionbtn-container">
+                    <img src={deletebtn}/>
+                    <img src={editbtn}/>
+                </div>
             </div>
         </div>
     )

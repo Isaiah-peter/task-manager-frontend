@@ -1,0 +1,58 @@
+.addTask-container {
+    margin: 40px;
+}
+
+.addtask-wrapper {
+    border: 1px solid var(--gray);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addtask-input-wrapper {
+    width: 511px;
+}
+
+.addtask-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.addtask-input {
+    width: 100%;
+    height: 37px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.priority-container, 
+.priority-input,
+.task-discription {
+    display: flex;
+    align-items: center;
+}
+
+.priority-container {
+    gap: 10%;
+}
+
+.priority-input {
+    gap: 10px;
+
+    .task-status-text {
+        margin-top: 0;
+    }
+}
+
+.task-discription {
+    gap: 20px;
+    align-items: stretch;
+}
+
+textarea.addtask-input {
+    max-height: 205px;
+    height: 205px;
+}
+
